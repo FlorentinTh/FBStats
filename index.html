@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>FBS%tats</title>
+		<!-- meta webApp -->
+		<meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-title" content="FBStats">
+    	<link rel="apple-touch-icon-precomposed" href="icon.png">
+		<!-- css -->
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="login">
+			<div id="fb-root"></div>
+			<div class="wrap-login">
+				<div class="label">
+					<span>FB</span>
+					<span>%<br></span>
+					<span>Stats<br></span>
+				</div>
+				<input type="text" class="login-dial">
+				<a class="soc-connect"><i class="icon-soc"></i><span class="content">Se connecter</i></span></a>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="wrap-user-info">
+				<div class="user-info">
+					<div class="profil-picture-border">
+						<div class="profil-picture"></div>
+					</div>
+					<div class="user-name">
+						<span id="username"></span>
+						<div class="btn">
+							<a class="soc-quit"><i class="icon-soc"></i><span class="content">Se déconnecter</span></a>
+						</div>
+					</div>
+					<div class="indic"></div>
+				</div>
+			</div>
+			<div class="wrap-row">
+				<div class="row">
+					<div class="item" id="item1"></div>
+					<div class="item" id="item2"></div>
+					<div class="item last" id="item3"></div>
+				</div>
+				<div class="row">
+					<div class="item" id="item4"></div>
+					<div class="item" id="item5"></div>
+					<div class="item last" id="item6"></div>
+				</div>
+			</div>
+		</div>
+		<!-- scripts -->
+		<script src="js/libs/jquery-2.1.1.min.js"></script>
+		<script src="js/libs/jquery.knob-1.2.11.min.js"></script>
+		<script>
+			$('.wrap').hide();
+			$('.login').show();
+			$(document).bind('touchmove', false);
+		</script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
